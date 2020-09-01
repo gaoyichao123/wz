@@ -3,111 +3,416 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
 </head>
 <body>
-    <div id="main" style="width: 900px;height: 600px;"></div>
-    <script>
-        var myChart=echarts.init(document.getElementById('main'));
-        var option={
-            title:{
-                // 标题
-                text:"每地区蒸发量和降水量",
-                // x轴
-                left:"center",
-                // y轴
-                top:0,
-                // 标题背景颜色
-                backgroundColor:"white",
-                // 文字样式
-                textStyle:{
-                    // 字体颜色
-                    color:"red"
-                },
-                // 副标题
-                subtext:"纯属虚构"
-        },
-            tooltip:{
-                // item 点住柱状图本主才会触发,不写则为item
-                trigger:"axis"  
-            },
-            legend:{
-                // 图例
-                data:["蒸发量","降水量"],
-                left:"left"
-            },
-            toolbox:{
-                // 是否显示图表
-                show:true,
-                feature:{
-                    mark:{
-                        show:true
-                    },
-                    // 是否显示数据视图
-                    dataView:{
-                        // 显示
-                        show:true,
-                        // 为true则为不可修改，false为可修改
-                        readOnly:true
-                    },
-                    // 是否可以转换为别的图表
-                    magicType:{
-                        // 可以
-                        show:true,
-                        // 所转换的图表类型
-                        type:["line","bar"]
-                    },
-                    // 还原
-                    restore:{
-                        show:true
-                    },
-                    // 是否可以储存成图片
-                    saveAsImage:{
-                        show:true
-                    }
-                }
-            },
-            calculable:true,
-            dataZoom:{
-                // 是否执行区域缩放
-               show:true,
-            //    缩放是否实时显示
-               realtime:true,
-            //    区域控制
-               start:20,
-               end:80,
-            },
-            xAxis:[
-                {
-                    type:"category",
-                    data:["1月","2月","3月","4月","5月","六月","七月","八月","九月","十月",]
-                }
-            ],
-            yAxis:[
-                {
-                   type:"value"
-                }
-            ],
-            series:[
-                {
-                    // 名字必须与legend里的data里的名字一样
-                    name:"蒸发量",
-                    type:"bar",
-                    data:[2,3,4,5,6,7,8,9,1,6],
-                },
-                {
-                    name:"降水量",
-                    type:"bar",
-                    data:[2,3,4,5,6,7,8,9,1,6],
-                }
-            ],
-         
-        };
-        myChart.setOption(option);
-    </script>
+    <div id="box">
+        <div class="lak">
+            <div class="lak1">
+                <img src="./合作伙伴---门诊列表---详细页_01.gif" alt="">
+            </div>
+            <div class="lak1">
+                <div class="lak2">11</div>
+                <div class="lak3">
+                    <ul>
+                            <li id="wrap">
+                                    <a href="#" id="set">首页</a>
+                                    <span class="one">♦</span>
+                                    <div id="div1">
+                                        <a href="#" class="two">搜索设置</a>
+                                        <a href="#" class="two">高级搜索</a>
+                                        <a href="#" class="two">搜索历史</a>
+                                    </div>
+                                </li>
+                        <li>走进朗朗</li>
+                        <li>支援动态</li>
+                        <li>合作伙伴</li>
+                        <li>辅助功能</li>
+                        <li>联系我们</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="lona">
+            <img src="./合作伙伴---门诊列表---详细页_03.gif" alt="">
+        </div>
+        <div id="uo">
+            <ul>
+                <li>合作伙伴</li>
+                <li>门诊列表</li>
+            </ul>
+        </div>
+        <div id="shabi">
+            <div id="sha">
+                <img src="./1.png" alt="">
+            </div>  
+            <div id="sha">
+                <p style="font-size: 20px;">威之远口腔种植中心</p>
+                <p style="font-size: 13px;color: gray;">朗朗口腔和行为来，与资本共舞口腔行业峰会继山东青岛第一站后，即将迎来第二站</p>
+                <div id="fan">
+                    查看更多→
+                </div>
+            </div>
+        </div>
+
+        <div id="shabi">
+            <div id="sha">
+                <p style="font-size: 20px;">威之远口腔种植中心</p>
+                <p style="font-size: 13px;color: gray;">朗朗口腔和行为来，与资本共舞口腔行业峰会继山东青岛第一站后，即将迎来第二站</p>
+                <div id="fan">
+                    查看更多→
+                </div>
+            </div>
+            <div id="sha">
+                <img src="./2.png" alt="">
+            </div>
+        </div>
+        
+        <div id="shabi">
+            <div id="sha">
+                <img src="./3.png" alt="">
+            </div>  
+            <div id="sha">
+                <p style="font-size: 20px;">威之远口腔种植中心</p>
+                <p style="font-size: 13px;color: gray;">朗朗口腔和行为来，与资本共舞口腔行业峰会继山东青岛第一站后，即将迎来第二站</p>
+                <div id="fan">
+                    查看更多→
+                </div>
+            </div>
+        </div>
+
+        <div id="di">
+            <div id="di1">
+                <div id="di2">
+                    <div id="dd">朗朗医疗投资有限公司</div>
+                    <div id="ss">
+                        集团总部热线：4000-890-600
+                        集团总部：广东省深圳市黄山区高欣赏一道3号 
+                    </div>
+                    <div id="ss1">
+                        <img src="./合作伙伴---门诊列表---详细页_10.gif" alt="">
+                        <img src="./合作伙伴---门诊列表---详细页_07.gif" alt="">
+                    </div>
+                </div>
+                <div id="di3">
+                    <ul>
+                        <li>走进朗朗</li>
+                        <li>质询动态</li>
+                        <li>合作伙伴</li>
+                        <li>辅助功能</li>
+                        <li>联系我们</li>
+                    </ul>
+                    <ul>
+                        <li>————</li>
+                        <li>————</li>
+                        <li>————</li>
+                        <li>————</li>
+                        <li>————</li>
+                    </ul>
+                    <ul>
+                        <li>朗朗简介</li>
+                        <li>行业动态</li>
+                        <li>们在列表</li>
+                        <li>公众号指引</li>
+                        <li>联系我们</li>
+                    </ul>
+                    <ul>
+                        <li>朗朗优秀</li>
+                        <li>朗朗质询</li>
+                        <li>门诊详情</li>
+                        <li>交通指南</li>
+                        <li>加入我们</li>
+                    </ul>
+                    <ul>
+                        <li>企业荣誉</li>
+                        <li>媒体报道</li>
+                        <li>交通指引</li>
+                        <li>在线客服</li>
+                        <li>在线留言</li>
+                    </ul>
+                    <ul>
+                        <li>团队风采</li>
+                        <li>公益活动</li>
+                        <li> </li>
+                        <li>一键拨号</li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div id="po">
+                    <img src="./合作伙伴---门诊列表---详细页_03.png" alt="">
+                </div>
+            </div>
+            <div id="aa">
+                @ 2005 - 2019 朗朗口腔医疗投资有限公司 版权所有 粤ICP备08130115号-1
+            </div>
+        </div>
+    </div>    
 </body>
-<style>
-    
-</style>
 </html>
+<script>
+var set = document.getElementById('set');
+    var div1 = document.getElementById('div1');
+    var one = document.getElementsByClassName('one');
+    var two = document.getElementsByClassName('two');
+    one[0].style.display = 'none';
+    div1.style.display = 'none';
+    set.onmouseover = function (){
+        one[0].style.display = 'block';
+        div1.style.display = 'block';
+    }
+    set.onmouseout = function (){
+        one[0].style.display = 'none';
+        div1.style.display = 'none';
+    }
+    two[0].onmouseover = function(){
+        two[0].style.background = 'rgb(57,139,251)';
+    }
+    two[1].onmouseover = function(){
+        two[1].style.background = 'rgb(57,139,251)';
+    }
+    two[2].onmouseover = function(){
+        two[2].style.background = 'rgb(57,139,251)';
+    }
+    two[0].onmouseout = function(){
+        two[0].style.background = 'white';
+    }
+    two[1].onmouseout = function(){
+        two[1].style.background = 'white';
+    }
+    two[2].onmouseout = function(){
+        two[2].style.background = 'white';
+    }
+
+    div1.onmouseover = function(){
+        one[0].style.display = 'block';
+        div1.style.display = 'block';
+    }
+    div1.onmouseout = function(){
+        one[0].style.display = 'none';
+        div1.style.display = 'none';
+    }
+    one[0].onmouseover = function(){
+        one[0].style.display = 'block';
+        div1.style.display = 'block';
+    }
+    one[0].onmouseout = function(){
+        one[0].style.display = 'none';
+        div1.style.display = 'none';
+    }
+</script>
+<style>
+    body ul li html *{
+        margin: 0;
+        padding: 0;
+    }
+    #fan{
+        width: 120px;
+        height: 40px;
+        border: 1px solid gainsboro;
+        color: gray;
+        text-align: center;
+        line-height: 40px;
+        margin-left: 30px;
+    }
+    #shabi{
+        width: 1000px;
+        height: 190px;
+        /* background: red; */
+        margin: 0 auto;
+        display: flex;
+        margin-top: 70px;
+    }
+    #sha img{
+        width: 500px;
+        height: 190px;
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+    }
+    ul li{
+        width: 130px;
+    }
+    #box{
+        width: 1500px;
+        margin: 0 auto;
+        height: 3708px;
+    }
+    .lak{
+        width: 1400px;
+        height: 124px;
+        display: flex;
+    }
+    .lak1{
+        width: 50%
+    }
+    .lak1 img{
+        width: 100%;
+        height: 100%;
+    }
+    .lak2{
+        width: 50%;height: 50px;
+        margin: 0 auto;
+    }
+    .lak3{
+        width: 100%;
+        height: 70px;
+    }
+    .lak3 ul{
+        width: 100%;
+        height: 100%;
+    }
+    .lak3 ul li{
+        width: 25%;
+        height: 100%;
+        text-align: center;
+        line-height: 70px;
+        font-size: 20px;
+        font-weight: 900;
+        
+    }
+    #wrap{
+        /* width: 150px;height: 200px; */
+        /* margin: 200px auto 0px; */
+        text-align: center;
+        position: relative;
+        
+    }
+    a{
+        color:black;
+        display: inline-block;
+        width: 150px;height: 20px;
+        
+    }
+
+    .one{
+        position: absolute;
+        left: 70px;top: 14px;
+        /* color: white; */
+
+    }
+    #div1{
+        width: 80px;height:81px;
+        margin: 3px auto 0px;
+        background: white;
+        
+
+    }
+    #div1 a{
+        display: inline-block;
+        width:78px;
+        height: 25px;
+        color:black;
+        font-size: 15px;
+        line-height: 25px;
+        text-decoration: none;
+        position: relative;
+        margin: 1px 1px;
+        z-index: 1;
+    }
+    #lona{
+        width: 100%;
+        height: 100px;
+    }
+    .lona img{
+        width: 100%;
+        height: 200px;
+    }
+    #uo{
+        width: 100%;
+        height: 70px;
+        border-bottom: 1px solid gainsboro;
+    }
+    #uo ul{
+        width: 300px;
+        height: 100%;
+        margin-left: 200px;
+    }
+    #uo ul li{
+        width: 80px;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+    }
+    #uo li:hover{
+        color: aquamarine;
+        border-bottom: 1px solid aquamarine;
+    }
+    
+    #di{
+        width: 100%;
+        height: 300px;
+        background: #eaeaea;
+        position: relative;
+        top: 130px;
+    }
+    #di1{
+        width: 900px;
+        height: 250px;
+        margin: 0 auto;
+        border-bottom: 1px solid gray;
+        display: flex;
+    }
+    #di2{
+        width: 45%;
+        height: 250px;
+    }
+    #di3{
+        width: 40%;
+        height: 250px;
+        
+    }
+    #di2 ul{
+        width: 100%;
+        height: 250px;
+        
+    }
+    #dd{
+        width: 300px;
+        height: 60px;
+        line-height: 60px;
+        font-size: 20px;
+        color: gray;
+        margin-top: 50px
+    }
+    #ss{
+        width: 350px;
+        height: 70px;
+        font-size: 12px;
+        color: gray
+    }
+    #di3{
+        width: 400px;
+        height: 200px;
+        /* background: red; */
+        margin-top: 50px;
+        margin-left: 5px;
+        font-size: 12px;
+        color: gray
+    }
+    #di3 ul li{
+        width: 100px;
+        height: 30px;
+        line-height: 30px;
+    }
+    #po{
+        width: 80px;
+        height: 180px;
+        margin-top: 100px
+    }
+    #aa{
+        width: 900px;
+        height: 40px;
+        margin: 0 auto;
+        line-height: 40px;
+        color: gray;
+        font-size: 13px
+    }
+    p{
+        margin-left: 30px;
+        
+    }
+</style>
